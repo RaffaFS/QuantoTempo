@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quanto Tempo?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
     <div class="container">
-        <div class="screen" id="landing">
-            <img src="" alt="maquina do tempo">
-            <p>"Quanto Tempo?" é um site destinado a viajantes temporais (ou atemporais... enfim)</p>
-            <p>Isso é especialmente útil para você que não gosta de fazer cálculos mas tem um dos modelos de máquinas do tempo mais antigos, que não aceitam a data target, e só o quão "para frente" ou "para trás" você quer ir</p>
-            <h1 class="title" id="titleLanding">Quanto Tempo?</h1>
-            <button type="button" class="btn" id="btnStart">Iniciar</button>
-        </div>
-        <div class="screen hidden" id="sistema">
-            <h1 class="title" id="titleSistema">Quanto Tempo?</h1>
-            <h2>Informe abaixo a data target</h2>
-            <form>
-                <input type="date">
-                <button type="submit" class="btn" id="btnCalc">Calcular</button>
-            </form>
-            <div class="resultados">
-                <h2>Se a sua máquina aceita valores em...</h2>
-                <p>segundos, insira:</p>
-                <p>minutos, insira:</p>
-                <p>horas, insira:</p>
-                <p>dias, insira:</p>
+        <div class="interface_box">
+            <div class="screen landing" id="landing">
+                <img src="img/timeMachine.png" alt="maquina do tempo">
+                <h1 class="title" id="titleLanding">Quanto Tempo?</h1>
+                <p class="description">"Quanto Tempo?" é um site destinado a viajantes temporais (ou atemporais... enfim). Isso é especialmente útil para você que não gosta de fazer cálculos mas tem um dos modelos de máquinas do tempo mais antigos, que não aceitam a data target, e só o quão "para frente" ou "para trás" você quer ir.</p>
+                <button type="button" class="btn" id="btnStart">Iniciar</button>
+            </div>
+            <div class="screen sistema hidden" id="sistema">
+                <h1 class="title" id="titleSistema">Quanto Tempo?</h1>
+                <h2>Informe abaixo a data target</h2>
+                <form>
+                    <input type="date">
+                    <button type="submit" class="btn" id="btnCalc">Calcular</button>
+                </form>
+                <div class="resultados">
+                    <h2>Se a sua máquina aceita valores em...</h2>
+                    <p>segundos, insira:</p>
+                    <p>minutos, insira:</p>
+                    <p>horas, insira:</p>
+                    <p>dias, insira:</p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script src="scripts/main.js"></script>
 </html>
