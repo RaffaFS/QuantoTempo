@@ -15,22 +15,22 @@
             <div class="screen landing" id="landing">
                 <img src="img/timeMachine.png" alt="maquina do tempo">
                 <h1 class="title" id="titleLanding">Quanto Tempo?</h1>
-                <p class="description">"Quanto Tempo?" é um site destinado a viajantes temporais (ou atemporais... enfim). Isso é especialmente útil para você que não gosta de fazer cálculos mas tem um dos modelos de máquinas do tempo mais antigos, que não aceitam a data target, e só o quão "para frente" ou "para trás" você quer ir.</p>
+                <p class="description">"Quanto Tempo?" é um site destinado a viajantes temporais (ou atemporais... enfim). Isso é especialmente útil para você que não gosta de fazer cálculos mas tem um dos modelos de máquinas do tempo mais antigos, que não aceitam a data target da viagem, mas só o quão "para frente" ou "para trás" você quer ir.</p>
                 <button type="button" class="btn" id="btnStart">Iniciar</button>
             </div>
             <div class="screen sistema hidden" id="sistema">
                 <h1 class="title" id="titleSistema">Quanto Tempo?</h1>
-                <h2>Informe abaixo a data target</h2>
-                <form>
-                    <input type="date">
+                <h2 class="instruction">Informe abaixo a data target</h2>
+                <form class="form" id="form">
+                    <input class="dataTGT" id="dataTGT" type="date">
                     <button type="submit" class="btn" id="btnCalc">Calcular</button>
                 </form>
-                <div class="resultados">
-                    <h2>Se a sua máquina aceita valores em...</h2>
-                    <p>segundos, insira:</p>
-                    <p>minutos, insira:</p>
-                    <p>horas, insira:</p>
-                    <p>dias, insira:</p>
+                <div class="resultados_box">
+                    <h2 class="resultados" id="resTitle"></h2>
+                    <p class="dif" id="difInS"></p>
+                    <p class="dif" id="difInM"></p>
+                    <p class="dif" id="difInH"></p>
+                    <p class="dif" id="difInD"></p>
                 </div>
             </div>
         </div>

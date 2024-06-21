@@ -14,33 +14,46 @@ body{
         max-width: 1080px;
         text-align: center;
         height: 100vh;
-        position: relative;
 
         .interface_box{
-            position: absolute;
+            position: relative;
+            display: flex;
+            justify-content: center;
 
             .screen{
-                width: 95%;
-                margin: 0 auto;
-                margin-top: 64px;
-                transition: all ease .5s;
-                padding: 32px;
-                border-radius: 16px;
+                position: absolute;
                 background-color: #fff;
+                padding: 32px;
+                margin: 32px auto;
+                border-radius: 16px;
+                width: 90%;
+                transition: all ease .5s;
+
+                @media(max-width: 768px){
+                    margin-top: 32px;
+                }
+
+                .title{
+                    font-family: "Space Grotesk", sans-serif;
+                    font-size: 48px;
+                    margin-bottom: 8px;
+                    @media(max-width: 768px){
+                        font-size: 32px;
+                    }
+                }
             }
             .hidden{
                 opacity: 0;
-                translate: 0 -720px;
+                translate: 0 720px;
             }
             .landing{
                 img{
                     max-height: 140px;
                     margin-bottom: 16px;
-                }
-                .title{
-                    font-family: "Space Grotesk", sans-serif;
-                    font-size: 48px;
-                    margin-bottom: 8px;
+
+                    @media(max-width: 768px){
+                        max-height: 80px;
+                    }
                 }
                 .description{
                     font-size: 20px;
@@ -50,6 +63,10 @@ body{
                     border: solid 4px rgb(224, 154, 40);
                     border-radius: 8px;
                     padding: 12px;
+
+                    @media(max-width: 768px){
+                        font-size: 16px;
+                    }
                 }
                 .btn{
                     padding: 4px;
@@ -67,7 +84,51 @@ body{
                 }
             }
             .sistema{
-    
+                .instruction{
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                }
+                .form{
+                    display: flex;
+                    gap: 16px;
+                    justify-content: center;
+                    margin-bottom: 32px;
+
+                    .dataTGT{
+                        font-size: 16px;
+                        padding: 4px;
+                        border-radius: 4px;
+
+                        @media(max-width: 768px){
+                            font-size: 14px;
+                        }
+                    }
+                    .btn{
+                        padding: 4px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        transition: all ease .3s;
+
+                        &:hover{
+                            translate: 0 2px;
+                            box-shadow: inset 0 1 2 #111;
+                        }
+
+                        @media(max-width: 768px){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .resultados_box{
+                    .resultados{
+                        font-size: 24px;
+                        margin-bottom: 16px;
+                    }
+                    .dif{
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                    }
+                }
             }
         }
     }
